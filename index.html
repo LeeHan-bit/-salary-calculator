@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>급여 계산기 - 세금 포함 실수령액 계산기</title>
+</head>
+<body>
+  <h1>급여계산기</h1>
+  <div class="content">
+    <input id="hour" type="number" placeholder="근무 시간 (시간)" step="any" autocomplete="off">
+    <input id="money" type="number" placeholder="시급 (원)" step="any" autocomplete="off">
+    <input id="tax" type="number" placeholder="세율 (%)" step="any" autocomplete="off">
+    
+    <!-- 제목 입력 -->
+    <input id="title" type="text" placeholder="저장할 이름">
+    
+    <!-- 버튼 컨테이너 -->
+    <div class="button-container">
+      <button id="caLc">계산</button>
+      <button id="saVe">저장</button>
+      <button id="reSet">초기화</button>
+    </div>
+  </div>
+
+  <!-- 계산 결과 -->
+  <div id="result" class="result" style="display: none;">
+    <!-- 결과가 여기에 나열됩니다 -->
+  </div>
+
+  <div id="saved-results" class="saved-results">
+    <!-- 저장된 결과들이 여기에 나열됩니다 -->
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
